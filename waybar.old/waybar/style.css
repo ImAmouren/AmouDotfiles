@@ -1,0 +1,90 @@
+@import "../waybar/mocha.css";
+
+* {
+    font-family: maplemono;
+    font-size: 13px;
+    font-weight: bold;
+
+    background-color: transparent;
+    border-radius: 0;
+    min-height: 10px;
+}
+
+window#waybar {
+    color: @text;
+    background-color: @base;
+}
+
+tooltip {
+    background: @base;
+    border: 2px solid @text;
+    border-radius: 10px;
+}
+tooltip label {
+    background: @base;
+}
+
+/*LEFT*/
+#workspaces {
+    color: @crust;
+    background-color: @surface0;
+    border-radius: 10px;
+    padding: 0 5px;
+    margin: 2px 3px;
+}
+#workspaces button {
+    color: @crust;
+    background-color: @mauve;
+    border-radius: 10px;
+    padding: 0 4px;
+    margin: 4px;
+}
+#workspaces button.active {
+    background-color: @peach;
+    border-radius: 10px;
+    padding: 0 8px;
+    margin: 4px;
+}
+#workspaces button.urgent {
+    background-color: @red;
+    border-radius: 10px;
+    padding: 0 8px;
+    margin: 4px;
+}
+
+/*CENTER*/
+#window {
+    color: @sapphire;
+    background-color: @surface0;
+    border-radius: 10px;
+    padding: 0 8px;
+    margin: 2px 3px;
+}
+/*RIGHT*/
+#tray {
+    background-color: @surface0;
+    border-radius: 10px;
+    padding: 0 8px;
+    margin: 2px 3px;
+}
+#pulseaudio {
+    color: @blue;
+    background-color: @surface0;
+    border-radius: 10px;
+    padding: 0 8px;
+    margin: 2px 0;
+}
+#clock {
+    color: @green;
+    background-color: @surface0;
+    border-radius: 10px;
+    padding: 0 8px;
+    margin: 2px 3px;
+}
+#custom-power {
+    color: @red;
+    background-color: @surface0;
+    border-radius: 10px;
+    padding: 3px 5px;
+    margin: 2px 3px;
+}
