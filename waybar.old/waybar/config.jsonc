@@ -1,0 +1,49 @@
+{
+    "position": "top",
+    "spacing": 2,
+
+    "modules-left":[
+        "hyprland/workspaces"
+    ],
+    "modules-center":[
+        "hyprland/window"
+    ],
+    "modules-right":[
+        "tray",
+        "pulseaudio",
+        "clock",
+        "custom/power"
+    ],
+    
+    //Modules-center
+    "hyprland/window":{
+        "max-length":75
+    },
+
+    //Modules-right
+    "tray": {
+        "icon-size": 17,
+        "spacing": 10
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 Muted",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+    "clock": {
+        "interval": 60,
+        "format": "{:%H:%M %Y-%m-%d }",
+        "max-length": 25,
+        "tooltip-format": "{:%A}",
+    },
+    "custom/power": {
+        "format": "  ",
+        "tooltip": false,
+        "on-click": "bash .local/bin/powermenu"
+    }
+}
